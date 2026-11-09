@@ -18,8 +18,10 @@ film. They were built before this template existed, so they carry their own help
 frame numbers. For **structure**, follow the template and the rules below, not the examples.
 
 ## The rules that never change
-1. **Every frame is drawn in code.** SVG shapes, paths and gradients in React. Never generate or
-   download images or video for the film. (Fonts from Google Fonts are fine.)
+1. **Every frame is drawn in code.** SVG in React, or a 2D canvas / three.js scene inside
+   `<StyleCanvas>` (`src/kit/StyleCanvas.tsx`) for library styles that need it (`styles/`). Never
+   generate or download images or video for the film. (Fonts from Google Fonts are fine.) The only
+   exception is a `material: real` style with footage the owner supplied (`styles/ADAPTING.md` §5).
 2. **The story comes first.** One character, one problem, one turn, one happy ending, and one small
    object (a "token") that matters at the start and pays off at the end. See `references/story.md`.
 3. **The voice leads, the picture follows.** Every beat lands on the spoken word (word timestamps →
@@ -102,7 +104,8 @@ See `references/voice-and-sound.md` for details.
 Before animating everything, build the world, the main character and the lighting for the hardest
 moment of the film (usually the turn), and render that one frame:
 `npx remotion still src/index.ts Film out/look.png --frame=<frame>`. Look at it and critique it in
-writing against `references/visual-style.md` (character appeal, readable silhouette, one light
+writing against the reel's style (`styles/<STYLE>/STYLE.md`, after `styles/ADAPTING.md`) and its
+craft checklist (character appeal, readable silhouette, one light
 source, depth, colour story, nothing covering a face or the token, nothing cut off at the edges).
 Fix it until a picture-book illustrator would be proud of it. Show it to the user if they want to
 approve the look.

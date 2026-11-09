@@ -28,10 +28,20 @@ Ask all of these at once, each with a suggested default drawn from the niche the
 9. **Safety:** what this niche must never do (regulators, health claims, kids' safety), and the
    disclaimer line, or none.
 10. **Hashtags:** the brand tag plus 3–5 niche tags.
+11. **Look (house styles):** one default style and up to 4 more to rotate in, from the 67 in
+    `styles/README.md` (skip `material: real` ones unless the owner will supply footage or data).
+    Suggest a default and 2–3 others that suit the niche and audience, with a one-line reason each,
+    and send their poster sheet in the same message:
+    `bash studio/render-style-picker.sh <style> <style> ...` (it prints the PNG's path). Mention
+    that `storybook` matches the mascot and templates out of the box, and other styles redraw the
+    mascot in their medium.
 
 ## Step 2: write the files (after the answers)
 1. **`account.json`:** fill every field. Keep the keys exactly as they are (the studio reads them).
    `badgeSymbol` is one character that suits the niche (★, ♥, ✿, ?, a currency sign…).
+   `styles.default` and `styles.allowed` (default first) from question 11; then run
+   `node scripts/styles-index.mjs` so `styles/README.md` shows the account's picks (it fails if a
+   name is not a style folder).
 2. **`BRAND.md`:** replace every `{{...}}` and **[TBD]**, following the finance example's level of
    detail: niche words in 1, a worked example in 2, number formats in 3.4, voice and music in 3.6,
    bios in 6.4, and a real 7.1 safe zone with preferred official sources in 7.3. Keep the voice rules

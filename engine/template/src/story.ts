@@ -9,6 +9,10 @@
 // The values below belong to the tiny starter scene in Film.tsx (6 s, no audio), so a fresh
 // project renders straight away. Replace them for every new film.
 
+// The look: a folder in styles/ (read styles/ADAPTING.md, then styles/<STYLE>/STYLE.md).
+// scripts/new-reel.sh --style sets it; the social skill reads it for recaps of this reel.
+export const STYLE = "storybook";
+
 export const FPS = 30;
 export const OFFSET = 15; // the narration starts 0.5 s in
 

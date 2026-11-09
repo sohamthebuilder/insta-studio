@@ -16,3 +16,10 @@ studio/public/audio/*
 brand/templates/png/
 brand/templates/guides/
 brand/assets/avatar/avatar-?.png
+
+# library style reference code, fetched on demand by scripts/fetch-style-demo.sh
+styles/_upstream/
+styles/*/demo
+
+# style picker sheets (studio/render-style-picker.sh)
+styles/picker/

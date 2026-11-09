@@ -1,0 +1,538 @@
+[
+ {
+  "slug": "storybook",
+  "name": "Soft Storybook",
+  "group": "House",
+  "renderer": "svg",
+  "material": "none",
+  "line": "A modern picture book that moves: simple round shapes, soft colour, one warm light, cute characters with big eyes, drawn in SVG inside Remotion."
+ },
+ {
+  "slug": "chalkboard",
+  "name": "Chalkboard",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A real classroom blackboard on which chalk writes itself, stroke by stroke in true stroke order, with no hand, no chalk stick and no eraser in sight."
+ },
+ {
+  "slug": "crayon-book",
+  "name": "Crayon Picture Book",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A picture-book page drawn live in wax crayon on toothy paper, with a watercolour wash that reveals what the crayon was hiding."
+ },
+ {
+  "slug": "impasto",
+  "name": "Impasto Oil Painting",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Thick oil paint laid with a palette knife: big, flat, sharp-edged planes of colour, raked by light so every ridge of paint shows."
+ },
+ {
+  "slug": "ink-wash",
+  "name": "Chinese Ink Wash",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Xieyi ink painting on rice paper, animated: blank paper is space, one brushstroke is a mountain, a wave, a gesture or a cut."
+ },
+ {
+  "slug": "one-line",
+  "name": "One-line Drawing",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A single ink line that never leaves the paper."
+ },
+ {
+  "slug": "urban-sketch",
+  "name": "Urban Sketch · Pen & Wash",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A sketchbook page drawn on location: fine sepia fineliner lines that wobble, overshoot and never quite close, with loose transparent watercolour dropped on top."
+ },
+ {
+  "slug": "watercolor",
+  "name": "Watercolor Brush",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A hand-painted journal page that paints itself: translucent brush strokes with dry-brush flying white on warm cotton paper, hand-written notes beside what is painted, nothing drawn with a vector line."
+ },
+ {
+  "slug": "whiteboard",
+  "name": "Whiteboard Explainer",
+  "group": "Hand-drawn & Painting",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "An explainer drawn live on one glossy dry-erase board: single-line handwriting that is actually written stroke by stroke, floating markers with no hand, magnets that can move, an eraser that can rewind, and a camera that travels across the board instead of cutting."
+ },
+ {
+  "slug": "cel-anime-80s",
+  "name": "80s Cel Anime",
+  "group": "Cartoon & Anime",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Hand-painted cel animation from the golden age of Japanese OVAs, re-created in code: flat two-tone cels over airbrushed backgrounds, backlit neon, limited-animation timing, played back as a late-80s videotape on a CRT television."
+ },
+ {
+  "slug": "midcentury-toon",
+  "name": "Mid-century Cartoon",
+  "group": "Cartoon & Anime",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "1950s flat colour and limited animation for \"follow along\" films: colour printed a few pixels off its broken ink line, bodies that hold still while hands do the work, abstract colour-block rooms, a calm classroom narrator, and a cool-jazz combo."
+ },
+ {
+  "slug": "rubber-hose",
+  "name": "1930s Rubber Hose Cartoon",
+  "group": "Cartoon & Anime",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Black-and-white hand-inked cartoons where every object is alive and swings to a hot jazz band."
+ },
+ {
+  "slug": "scifi-toon",
+  "name": "Sci-Fi Sitcom Toon",
+  "group": "Cartoon & Anime",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Adult-animation sci-fi sitcom: thick boiling outlines, flat colour, a duo whose reactions don't match, a glowing portal, and one palette per world."
+ },
+ {
+  "slug": "engraving",
+  "name": "Copperplate Engraving",
+  "group": "Print & Printmaking",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "An intaglio plate that engraves itself: a burin cuts swelling lines into copper, a proof is pulled, and the figure builds up — outline, hatching, cross-hatching — until engraved lettering, magnified details and a hand-laid wash make a finished plate."
+ },
+ {
+  "slug": "halftone-dossier",
+  "name": "Halftone Dossier",
+  "group": "Print & Printmaking",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A retro print case file: cream archive paper, overprinted halftone dots in a few flat inks, huge heavy headlines with misregistered shadows, rubber stamps that slam, and thick-outlined characters."
+ },
+ {
+  "slug": "printed-long-take",
+  "name": "Printed Long Take",
+  "group": "Print & Printmaking",
+  "renderer": "three",
+  "material": "none",
+  "line": "A three-dimensional world rendered as a scratchboard print, ink and paper with one red, crossed by one unbroken camera move."
+ },
+ {
+  "slug": "risograph",
+  "name": "Risograph Print",
+  "group": "Print & Printmaking",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Animation that looks printed, frame by frame, on a stencil duplicator: two or three translucent spot inks overprinted on warm paper, halftone dots, ink grain, and plates that never quite line up."
+ },
+ {
+  "slug": "silkscreen-poster",
+  "name": "Silkscreen Travel Poster",
+  "group": "Print & Printmaking",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Opaque, hard-edged flat inks pulled one colour at a time through a screen: 4–6 inks per poster, stepped colour bands instead of gradients, thin paper-white gaps where the registration slips."
+ },
+ {
+  "slug": "woodcut",
+  "name": "Woodcut Print",
+  "group": "Print & Printmaking",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A relief print that carves itself: every frame is a black wood block, and light only exists where a knife has cut it away."
+ },
+ {
+  "slug": "paper-lantern",
+  "name": "Paper-cut Lightbox",
+  "group": "East Asian Traditions",
+  "renderer": "three",
+  "material": "none",
+  "line": "A layered paper-cut shadow box (纸雕灯) lit from behind: 6–9 sheets of cut card stacked in a shallow box, a warm light glowing through the paper, windows and moons burning through holes, soft shadows falling from each layer onto the next."
+ },
+ {
+  "slug": "papercut-red",
+  "name": "Red Paper-cut",
+  "group": "East Asian Traditions",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Chinese window-flower paper-cuts brought to life: jointed red cut-outs on paper grounds, where the cut is the drawing and the holes are where the light gets in."
+ },
+ {
+  "slug": "shadow-puppet",
+  "name": "Shadow Puppetry",
+  "group": "East Asian Traditions",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Chinese shadow theatre: translucent dyed-hide puppets, carved like lace, pressed against a cotton screen and lit from behind by oil lamps."
+ },
+ {
+  "slug": "ukiyoe",
+  "name": "Ukiyo-e",
+  "group": "East Asian Traditions",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Edo-period woodblock prints brought to life: flat colour blocks, carved ink lines, bokashi skies, paper you can feel, and a camera that moves over the print like an unrolling handscroll."
+ },
+ {
+  "slug": "art-deco",
+  "name": "Art Deco",
+  "group": "Graphic & Type",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Black lacquer, engraved gold line and airbrushed geometry: a 1930s poster that moves."
+ },
+ {
+  "slug": "ascii-crt",
+  "name": "ASCII / CRT Terminal",
+  "group": "Graphic & Type",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Everything on screen is a real character on a monospace grid, lit by the phosphor of an old monochrome CRT."
+ },
+ {
+  "slug": "blueprint",
+  "name": "Blueprint",
+  "group": "Graphic & Type",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "Engineering drawings that come alive on a sheet of cyanotype paper: white technical line work on Prussian blue, drawn in drafting order, with annotations that move."
+ },
+ {
+  "slug": "pictogram-motion",
+  "name": "Pictogram Motion",
+  "group": "Graphic & Type",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A beat-locked film built from three things only: a square-grid \"core graphic\" of circles, half-discs and tiny patterned cells whose rows slide past each other; geometric pictograms (objects, vehicles, weather, signs, and a disc-headed figure when one is needed) made of round-capped bars, discs and capsules; and bold bilingual type that slides up out of masks."
+ },
+ {
+  "slug": "spy-titles",
+  "name": "60s Spy Title Sequence",
+  "group": "Graphic & Type",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A cut-paper, four-ink opening title sequence for a film that never existed: silhouettes move through sets built out of the credits themselves, every brass stab is a cut, and a title is assembled from the pieces."
+ },
+ {
+  "slug": "stained-glass",
+  "name": "Stained Glass",
+  "group": "Graphic & Type",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A medieval stained-glass window seen from inside a dark stone hall, alive only where the sun touches it: light is the clock, the camera and the story."
+ },
+ {
+  "slug": "swiss-motion",
+  "name": "Swiss Motion Graphics",
+  "group": "Graphic & Type",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "International Typographic Style in motion: a modular grid, one typeface, one signal colour, and movement as exact as a printing press."
+ },
+ {
+  "slug": "game-show",
+  "name": "Game Show Flat",
+  "group": "Games",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A rhythm-game variety show in flat vector: toy-like mascots with thick ink outlines on candy-coloured stripes and sunbursts, every hit landing on a fixed tempo grid, call-and-response patterns, and a judgement word when each round is won."
+ },
+ {
+  "slug": "hd-2d",
+  "name": "HD-2D",
+  "group": "Games",
+  "renderer": "three",
+  "material": "none",
+  "line": "Hand-made pixel sprites standing like paper cut-outs inside a lit, fogged, fully 3D diorama, shot from a high three-quarter angle through a tilt-shift lens: a toy world where every lamp throws a real shadow."
+ },
+ {
+  "slug": "microgame",
+  "name": "Microgame Frenzy",
+  "group": "Games",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A rapid-fire party-game film: one command word, a few seconds, one action."
+ },
+ {
+  "slug": "pixel-rpg",
+  "name": "16-bit Pixel RPG",
+  "group": "Games",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A short film that looks, sounds and behaves like a mid-90s console role-playing game: 320×180 pixels, a limited indexed palette, text boxes that type, menus, save files, chip music with echo."
+ },
+ {
+  "slug": "circuit-board",
+  "name": "Circuit Board",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "The subject is drawn as a printed circuit board seen from straight above: the world is copper under green solder mask, routes are traces, places are pads, words are white silkscreen, and what flows (power, water, signals, goods) is light running along the copper."
+ },
+ {
+  "slug": "dark-keynote",
+  "name": "Dark Tech Keynote",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A software launch film where the interface itself is the star: near-black gradient, hairline grid, soft light, one brand accent, and UI that moves with snap-grid precision."
+ },
+ {
+  "slug": "dataviz",
+  "name": "Data Storytelling",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A chart that tells a story: real data, drawn mark by mark on cream paper by a red–blue pencil, with handwritten notes pinned to the numbers."
+ },
+ {
+  "slug": "hologram-hud",
+  "name": "Sci-fi Hologram HUD",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "An object is scanned into a glowing wireframe."
+ },
+ {
+  "slug": "iso-infographic",
+  "name": "Isometric Infographic",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A system diagram comes alive: an isometric diorama of flat three-tone blocks, thin ink labels and Isotype numbers, where things open up to show their insides and the numbers are drawn, not stated."
+ },
+ {
+  "slug": "isometric-picture-book",
+  "name": "Isometric Picture Book",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A calm explainer of an everyday rule, set in one real place drawn in true isometric with flat colour: small faceless people seen from behind do the thing in order, while serif type lands on the ground, character by character, as if painted there."
+ },
+ {
+  "slug": "living-screencast",
+  "name": "Living Screencast",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A product walkthrough that looks like a real screen recording, where a low-resolution mascot lives inside a high-resolution interface and acts out what the software is doing."
+ },
+ {
+  "slug": "transit-map",
+  "name": "Transit Map",
+  "group": "Information & Keynote",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A metro schematic printed on a physical sheet: lines held to eight directions, white stops, black-outlined interchange capsules, water as a flat blue band."
+ },
+ {
+  "slug": "brick-toy",
+  "name": "Brick Toy",
+  "group": "Materials & 3D",
+  "renderer": "three",
+  "material": "none",
+  "line": "Stop-motion toy-brick films shot like macro photography on a real desk: a world built from interlocking plastic bricks with round studs, animated a pose at a time."
+ },
+ {
+  "slug": "desktop-flythrough",
+  "name": "Desktop Flythrough",
+  "group": "Materials & 3D",
+  "renderer": "three",
+  "material": "none",
+  "line": "App screens and tools lie on a sunlit desk as printed paper cards; small pixel characters, popped up into voxel toys, carry the work from card to card, while one unbroken camera flies after them, whips between stops and finally pulls back over the whole desk."
+ },
+ {
+  "slug": "glass-product",
+  "name": "Glass Product Render",
+  "group": "Materials & 3D",
+  "renderer": "three",
+  "material": "none",
+  "line": "Launch-film product rendering in transparent and frosted glass: a dark-field studio, strip-light sweeps, dispersion, caustics, light travelling inside the object, slow exploded views that snap shut on a downbeat."
+ },
+ {
+  "slug": "lowpoly-island",
+  "name": "Low-poly Isometric Island",
+  "group": "Materials & 3D",
+  "renderer": "three",
+  "material": "none",
+  "line": "A tiny faceted world seen through an orthographic isometric lens: everything is a geometric block, and everything that appears arrives with a bounce and a note."
+ },
+ {
+  "slug": "memphis-diorama",
+  "name": "Memphis Diorama",
+  "group": "Materials & 3D",
+  "renderer": "three",
+  "material": "none",
+  "line": "A place built as a tabletop model: on warm white paper an organic, grainy frame grows open, and inside it a small world in flat Memphis colours, ink outlines, hard purple shadows and tiny patterns, full of small motions under a slow camera."
+ },
+ {
+  "slug": "paper-popup",
+  "name": "Paper Pop-up Book",
+  "group": "Materials & 3D",
+  "renderer": "three",
+  "material": "none",
+  "line": "A pop-up book on a real desk becomes a stage: flat cut-paper actors with white borders perform in front of paper sets that spring up from the page, under real lamp light and a real macro lens."
+ },
+ {
+  "slug": "tilt-shift",
+  "name": "Tilt-Shift Miniature",
+  "group": "Materials & 3D",
+  "renderer": "three",
+  "material": "none",
+  "line": "A real-looking place photographed from high above with a tilted lens and a time-lapse camera, so the whole world reads as a tabletop model."
+ },
+ {
+  "slug": "backrooms",
+  "name": "Liminal Found Footage",
+  "group": "Cinema & Eras",
+  "renderer": "three",
+  "material": "none",
+  "line": "Camcorder tapes recovered from empty, endless, fluorescent-lit spaces."
+ },
+ {
+  "slug": "silent-film",
+  "name": "1920s Silent Film",
+  "group": "Cinema & Eras",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "An engraved-illustration silent film projected in a picture house: ink line and silver wash, a 4:3 print that flickers and weaves between velvet curtains, intertitles instead of voices, and a cinema pianist who plays every beat."
+ },
+ {
+  "slug": "archive-lighttable",
+  "name": "Archive Light Table",
+  "group": "Evidence Films",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "Real archive objects (glass negatives, slides, letters, telegrams, clippings, drawings) lie on a cool, backlit light table."
+ },
+ {
+  "slug": "briefing-board",
+  "name": "Engineering Briefing Board",
+  "group": "Evidence Films",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "One real whiteboard wall, filmed: window light on enamel, ghosts of erased marker, frame and tray."
+ },
+ {
+  "slug": "data-physical",
+  "name": "Data Physicalization",
+  "group": "Evidence Films",
+  "renderer": "three",
+  "material": "none",
+  "line": "Real statistics built as real objects: every unit is a countable piece of material (a plate, a block, a coin, a bar) stacked to exact scale on a crafted base, shot like a product in a studio — soft key, long shadows, shallow depth of field, physically based materials."
+ },
+ {
+  "slug": "lidar-survey",
+  "name": "LiDAR Survey",
+  "group": "Evidence Films",
+  "renderer": "three",
+  "material": "real",
+  "line": "Real airborne laser points of a real place, floating in the dark as a measured cloud; a scan line or a cutting plane passes through them and the points condense into a solid, raking-lit surface, which is then measured with hairline instruments."
+ },
+ {
+  "slug": "microscope",
+  "name": "Microscope Story",
+  "group": "Evidence Films",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "Real, licence-clean microscopy of a real specimen, seen as it is, and one continuous change of scale that carries the viewer from the glass slide in the hand to a single cell."
+ },
+ {
+  "slug": "satellite-briefing",
+  "name": "Satellite Briefing",
+  "group": "Evidence Films",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "Real satellite imagery of a real place, graded down to an analyst's grey, with thin white measurement lines drawn on the ground: a lock-on reticle, outlines, a range line, one reading."
+ },
+ {
+  "slug": "teardown",
+  "name": "Exploded Teardown",
+  "group": "Evidence Films",
+  "renderer": "three",
+  "material": "real",
+  "line": "A real product, built from its own engineering files (CAD, PCB layout, bill of materials), lit like a studio packshot and taken apart in front of the camera: the layers lift on one axis, the camera travels between them, every part is named with the numbers its files contain, and it closes again into one object."
+ },
+ {
+  "slug": "white-model",
+  "name": "Projection on White Model",
+  "group": "Evidence Films",
+  "renderer": "three",
+  "material": "real",
+  "line": "A pure white massing model of a real place stands on a plinth in a dark room, and a projector paints data onto it as light: one layer at a time, falling on the surfaces that face it, spilling a little past the plate."
+ },
+ {
+  "slug": "caption-news",
+  "name": "Caption News",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "Social-video news that reads with the sound off."
+ },
+ {
+  "slug": "city-symphony",
+  "name": "Time-lapse Symphony",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "A city film cut like a piece of minimalist music: time-lapse turns traffic, crowds and clouds into rivers of light, the cuts get denser with the score's subdivisions, one thing is slowed almost to a stop, and the film ends on a hard cut to black on a downbeat."
+ },
+ {
+  "slug": "countdown",
+  "name": "Live Countdown Split-screen",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "An edit style, not a look."
+ },
+ {
+  "slug": "kino-montage",
+  "name": "Constructivist Montage",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "Real archive footage, photographs and documents, printed as one ink-and-paper poster with a single red, and cut on a machine beat."
+ },
+ {
+  "slug": "news-package",
+  "name": "Broadcast News Package",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "none",
+  "line": "A television newsroom's on-air package, built entirely in code: a sting that becomes the channel bug, a rundown of today's stories that opens and closes the bulletin, a lower-third strap that never leaves the bottom of the frame, and full-frame graphics (split-flap price boards, a line breaking a threshold, explainer maps, documents flying out of a city, quote cards, spec cards with proportion bars, stamps) that carry the facts."
+ },
+ {
+  "slug": "newsreel",
+  "name": "1920s Newsreel",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "A sound newsreel of the late 1920s, cut from real archive material: a searchlight-and-globe ident with a brass fanfare, a newspaper that spins into the lens, a fast and cheerful announcer on an optical soundtrack, place-and-date cards, maps, magazine pages and documents, wipes, flips and irises, and a hot band that can stop dead for the punchline."
+ },
+ {
+  "slug": "telestrator",
+  "name": "Sports Telestrator",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "The TV football analysis segment: play the clip at full speed, rewind, freeze it, and draw on the broadcast picture — rings under players' feet, marker arrows for the ball, a red patch for the space nobody covered — then play on, switch angles, count the frames, and flatten the pitch into a board."
+ },
+ {
+  "slug": "visual-investigation",
+  "name": "Visual Investigation",
+  "group": "Edit & Documentary",
+  "renderer": "canvas",
+  "material": "real",
+  "line": "A cold investigation desk: footage, photographs, documents, sound and maps from one real event, laid out on one shared clock so they check each other."
+ }
+]
