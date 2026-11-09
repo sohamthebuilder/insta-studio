@@ -1,0 +1,48 @@
+{
+  "_readme": "One file per account. The studio templates and the reel/social skills read everything brand-specific from here. Run the new-account skill to fill it in, then re-render the brand kit.",
+
+  "handle": "your.handle",
+  "spokenHandle": "your dot handle",
+  "displayName": "Your Brand",
+  "wordmark": { "plain": "your.", "accent": "brand" },
+  "tagline": "One idea, explained simply in 60-sec cartoons",
+  "bannerLine": "New reels every week",
+
+  "niche": "TBD",
+  "audience": "TBD",
+  "country": "TBD",
+  "language": "English",
+  "defaultTag": "Basics",
+
+  "disclaimer": "",
+  "badgeSymbol": "★",
+
+  "hashtags": { "brand": "#yourbrand", "niche": ["#topic"] },
+
+  "voice": {
+    "name": "TBD (pick with creative_list_voices)",
+    "id": "",
+    "model": "eleven_v4",
+    "wordsPerSecond": 2.5,
+    "tags": ["[warm, storytelling]", "[curious]", "[softly]", "[building]", "[brightly]", "[delighted]"]
+  },
+  "music": { "style": "playful pizzicato and marimba", "gainDb": -3.5, "sfxBusDb": -13, "effectsPerReel": 3 },
+
+  "mascot": { "name": "Mini", "body": "#FFB37A", "hat": true, "hatColor": "#f4b740", "hatTop": "#f7c95a", "hatBand": "#e2594a" },
+  "logoOption": "C",
+
+  "colors": {
+    "bg": "#161E34",
+    "bgDeep": "#1A1D2E",
+    "text": "#FFF7E6",
+    "accent": "#FFE3A3",
+    "accentDark": "#C98A1E",
+    "accent2": "#8FF0B4",
+    "down": "#FF8A80",
+    "warm1": "#FFC861",
+    "warm2": "#FF9A2A",
+    "gloom": "#7D8BA8",
+    "ink": "#2B1D18",
+    "cheek": "#FF8FA3"
+  }
+}

@@ -1,0 +1,18 @@
+node_modules/
+.venv/
+.DS_Store
+*.bak*
+# renders and generated audio stay local (they are big and per-account)
+reels/*/out/
+reels/*/public/audio/
+reels/*/out_*.txt
+social/*/guides/
+studio/public/audio/*
+!studio/public/audio/.gitkeep
+# secrets
+.env
+
+# per-account renders (rebuilt by studio/render-brand.sh); the sheet, banner and profile stay as previews
+brand/templates/png/
+brand/templates/guides/
+brand/assets/avatar/avatar-?.png
