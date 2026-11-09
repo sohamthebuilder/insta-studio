@@ -1,29 +1,83 @@
-# insta-studio
+<div align="center">
 
-A content studio for one Instagram + YouTube Shorts account, in **any niche**, run with
-[Claude Code](https://claude.com/claude-code). It makes:
+# 🎬 insta-studio
 
-- **60-second animated story reels** (9:16): one cartoon analogy world explains one idea, an
-  ElevenLabs narrator tells it, every beat lands on the spoken word, music and soft effects, and
-  every frame is drawn in code with [Remotion](https://remotion.dev). No presenter, no AI images.
-- **Stills that match the reels:** carousels, single posts, story sets, highlight covers, reel covers,
-  profile pictures and a YouTube banner, all from one template library.
-- **67 visual styles to choose from:** the house storybook look plus 66 library styles (watercolour,
-  woodcut, ukiyo-e, pixel RPG, chalkboard, low-poly 3D…) from
-  [lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar). Each account picks a few house styles;
-  every reel and post can use one of them. See [`styles/README.md`](styles/README.md).
-- **Ready-to-paste text:** Instagram captions, Shorts titles and descriptions, plus a `sources.md`
-  for every fact.
+**An animated content studio for one Instagram + YouTube Shorts account, in any niche.**<br>
+You bring an idea. [Claude Code](https://claude.com/claude-code) writes the script, draws every frame,
+records the narrator and hands you a finished reel.
 
-Everything brand-specific (handle, colours, mascot, voice, disclaimer, hashtags) lives in
-**`account.json`** and **`BRAND.md`**. The process lives in three Claude Code skills that ship with
-the repo.
+<img alt="67 styles" src="https://img.shields.io/badge/styles-67-E8553A?style=for-the-badge">
+<img alt="Remotion" src="https://img.shields.io/badge/drawn%20in-Remotion-0B84F3?style=for-the-badge">
+<img alt="ElevenLabs" src="https://img.shields.io/badge/voice-ElevenLabs-111111?style=for-the-badge">
+<img alt="No AI images" src="https://img.shields.io/badge/AI%20images-none-2EA44F?style=for-the-badge">
 
-## Styles
+<img src="docs/hero.jpg" alt="Twelve of the 67 styles: storybook, watercolour, ukiyo-e, pixel RPG, low-poly island, crayon book, woodcut, chalkboard, paper pop-up, risograph, 80s cel anime, isometric infographic">
 
-Pick a look per account (`account.json` → `styles`) and per reel. Details, renderers and fit notes:
-[`styles/README.md`](styles/README.md). See the posters side by side with
-`bash studio/render-style-picker.sh` (all) or `bash studio/render-style-picker.sh watercolor woodcut`.
+<sub>12 of the 67 looks a reel can take. Every frame is code: no presenter, no stock footage, no AI images.</sub>
+
+**[🚀 First reel in an hour](first-time-setup-create-first-reel.md)** · **[🎨 All 67 styles](#-67-styles)** · **[⚙️ How it works](#%EF%B8%8F-how-it-works)**
+
+</div>
+
+---
+
+## ✨ What you get
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<img src="styles/storybook/poster.jpg" alt="A storybook reel frame: a bean character under the moon"><br>
+<b>🎞️ 60-second reels</b><br>
+<sub>One cartoon analogy world explains one idea. A narrator tells it, every beat lands on the spoken word, with music and soft effects. 9:16, ready for Reels and Shorts.</sub>
+</td>
+<td width="33%" valign="top">
+<img src="docs/stills.jpg" alt="Carousel, story and reel templates with the mascot"><br>
+<b>🖼️ Stills that match</b><br>
+<sub>Carousels, single posts, story sets, highlight covers, designed reel covers, profile pictures and a YouTube banner, from one template library.</sub>
+</td>
+<td width="33%" valign="top">
+<img src="styles/dataviz/poster.jpg" alt="A data storytelling frame: a hand-drawn chart with notes"><br>
+<b>📝 Text that's ready to paste</b><br>
+<sub>Instagram caption, Shorts title and description, plus a <code>sources.md</code> with a source and a date for every fact.</sub>
+</td>
+</tr>
+</table>
+
+Everything brand-specific (handle, colours, mascot, voice, disclaimer, hashtags, house styles) lives in
+**`account.json`** and **`BRAND.md`**. Point the repo at a new niche and the same skills make content
+for it.
+
+## 🎨 67 styles
+
+Every account picks a few **house styles** so the feed stays recognisable, and any reel can try another.
+The house look is **Soft Storybook**. The other 66 come from
+[lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar), each with a full guide to how it looks,
+moves and sounds.
+
+<table>
+<tr>
+<td width="33%"><a href="styles/watercolor/STYLE.md"><img src="styles/watercolor/poster.jpg" alt="Watercolor Brush"></a><br><b>Watercolor Brush</b> · <code>watercolor</code></td>
+<td width="33%"><a href="styles/ukiyoe/STYLE.md"><img src="styles/ukiyoe/poster.jpg" alt="Ukiyo-e"></a><br><b>Ukiyo-e</b> · <code>ukiyoe</code></td>
+<td width="33%"><a href="styles/pixel-rpg/STYLE.md"><img src="styles/pixel-rpg/poster.jpg" alt="16-bit Pixel RPG"></a><br><b>16-bit Pixel RPG</b> · <code>pixel-rpg</code></td>
+</tr>
+<tr>
+<td><a href="styles/crayon-book/STYLE.md"><img src="styles/crayon-book/poster.jpg" alt="Crayon Picture Book"></a><br><b>Crayon Picture Book</b> · <code>crayon-book</code></td>
+<td><a href="styles/woodcut/STYLE.md"><img src="styles/woodcut/poster.jpg" alt="Woodcut Print"></a><br><b>Woodcut Print</b> · <code>woodcut</code></td>
+<td><a href="styles/lowpoly-island/STYLE.md"><img src="styles/lowpoly-island/poster.jpg" alt="Low-poly Isometric Island"></a><br><b>Low-poly Island</b> · <code>lowpoly-island</code> · 3D</td>
+</tr>
+<tr>
+<td><a href="styles/chalkboard/STYLE.md"><img src="styles/chalkboard/poster.jpg" alt="Chalkboard"></a><br><b>Chalkboard</b> · <code>chalkboard</code></td>
+<td><a href="styles/risograph/STYLE.md"><img src="styles/risograph/poster.jpg" alt="Risograph Print"></a><br><b>Risograph Print</b> · <code>risograph</code></td>
+<td><a href="styles/iso-infographic/STYLE.md"><img src="styles/iso-infographic/poster.jpg" alt="Isometric Infographic"></a><br><b>Isometric Infographic</b> · <code>iso-infographic</code></td>
+</tr>
+</table>
+
+Just name one: *"make the next reel about compound interest in the **woodcut** style"*.
+
+<details>
+<summary><b>🗂️ See every style</b> (poster sheet and the full list by group)</summary>
+<br>
+<img src="docs/all-styles.jpg" alt="Poster sheet of all 67 styles">
 
 <!-- styles:start -->
 <!-- generated by scripts/styles-index.mjs; do not edit by hand -->
@@ -46,75 +100,94 @@ Pick a look per account (`account.json` → `styles`) and per reel. Details, ren
 † Needs real footage, photos, scans or data that you supply. Every other style is drawn entirely in code.
 <!-- styles:end -->
 
-## Start a new account
+More detail per style (renderer, fit notes for 9:16 reels): [`styles/README.md`](styles/README.md).
+What every style keeps for your account (safe zones, subtitles, mascot, voice): [`styles/ADAPTING.md`](styles/ADAPTING.md).
+</details>
 
-New here? Follow [`first-time-setup-create-first-reel.md`](first-time-setup-create-first-reel.md)
-from install to your first posted reel.
+## ⚙️ How it works
 
-```bash
-# 1. make your own copy (or click "Use this template" on GitHub)
-gh repo create my-new-account --private --template <owner>/insta-studio --clone
-cd my-new-account
+Three Claude Code skills ship with the repo (`.claude/skills/`). Each one stops for your OK before it
+spends a single credit.
 
-# 2. one-time setup: checks Node 18+, ffmpeg, Python 3, installs the studio and the timing venv
-bash scripts/setup.sh
-
-# 3. open Claude Code here and say:
-#    "set up a new account for <your niche>"
-claude
+```mermaid
+flowchart LR
+    A["💡 Your idea"] --> B["Gate 1 · proposal<br/>script · style · voice preview<br/>storyboard · cover · sources"]
+    B -->|"you say OK"| C["Gate 2 · production<br/>voice → word timing → animation<br/>→ music & effects → mix → render"]
+    C --> D["📦 film.mp4 + cover.png<br/>caption.md + sources.md"]
+    D -->|"your feedback"| E["LEARNINGS.md<br/>rules for every next reel"]
+    E -.-> B
 ```
-
-You also need ElevenLabs for the voice and music. Connect the ElevenLabs connector in the Claude app
-(Settings → Connectors), or set `ELEVENLABS_API_KEY`. A 60 s reel costs about 2,750 credits.
-
-## The skills (in `.claude/skills/`, picked up automatically by Claude Code in this folder)
 
 | Skill | Say | What happens |
 |---|---|---|
-| `new-account` | "set up a new account for plant care" | Interviews you (niche, audience, handle, voice, mascot, colours, house styles, safety rules), fills `account.json` + `BRAND.md`, renders the brand kit, proposes the first 5 reels |
-| `reel` | "make the next reel about X" | **Gate 1:** script, style options (poster sheet), voice preview, storyboard, cover and sources for your OK (no credits spent). **Gate 2:** voice → word timing → animation → mix → render → cover → captions |
-| `social` | "turn that reel into a carousel" / "make a story set" | Outline for your OK, then renders PNGs into `social/<slug>/` with `caption.md` and `sources.md` |
+| 🧭 `new-account` | *"set up a new account for plant care"* | Interviews you (niche, audience, handle, voice, mascot, colours, house styles, safety rules), fills `account.json` + `BRAND.md`, renders the brand kit, proposes your first 5 reels |
+| 🎞️ `reel` | *"make the next reel about X"* | **Gate 1:** script, style options, voice preview, storyboard, cover and sources, no credits spent. **Gate 2:** voice, word timing, animation, mix, render, cover, captions |
+| 🖼️ `social` | *"turn that reel into a carousel"* | Outline for your OK, then PNGs in `social/<slug>/` with `caption.md` and `sources.md` |
 
-Rules that came from real feedback (no presenter, hook first, designed covers, no sticker
-placeholders, verified and dated facts) are built in. New feedback goes into `LEARNINGS.md` and
-becomes a rule for every later piece. `LOG.md` keeps the list of what's been made.
+Rules that came from real feedback are built in: no presenter, hook first, designed covers, no sticker
+placeholders, verified and dated facts. Your own feedback goes into `LEARNINGS.md` and becomes a rule
+for every later piece.
 
-## Layout
+## 🚀 Quick start
+
+```bash
+gh repo create my-account --private --template sohamthebuilder/insta-studio --clone
+```
+
+```bash
+cd my-account && bash scripts/setup.sh
+```
+
+```bash
+claude
+```
+
+Then say *"set up a new account for &lt;your niche&gt;"*. You need Node 18+, ffmpeg, Python 3 and
+[ElevenLabs](https://elevenlabs.io) (connector or `ELEVENLABS_API_KEY`). A 60 s reel costs about
+2,750 credits.
+
+👉 The full walkthrough, from install to a posted reel: **[first-time-setup-create-first-reel.md](first-time-setup-create-first-reel.md)**
+
+## 🧰 Handy commands
+
+```bash
+bash studio/render-brand.sh                     # re-render the brand kit after editing account.json
+bash studio/render-piece.sh <slug> --guides     # check a post against the safe zones
+bash scripts/new-reel.sh <slug> --style <style> # new reel project in a style (default: account.json)
+bash studio/render-style-picker.sh [style ...]  # poster sheet to choose a look (no names = all 67)
+bash scripts/fetch-style-demo.sh <style>        # a library style's upstream demo code, to read while porting
+node scripts/styles-index.mjs                   # rebuild the style index and the list in this README
+cd reels/<slug> && npm run studio               # preview a reel in the browser
+cd reels/<slug> && npm run render               # render out/film.mp4
+```
+
+<details>
+<summary><b>📁 Repo layout</b></summary>
 
 ```
-account.json        brand values the code reads (handle, colours, mascot, voice, music, disclaimer)
+account.json        brand values the code reads (handle, colours, mascot, voice, music, styles)
 BRAND.md            brand guide: voice, 8-beat story formula, specs, captions, safety rules
 LEARNINGS.md        owner feedback rules, newest last
+LOG.md              every reel and post made
 styles/             67 looks: <style>/STYLE.md (+ DEMO.md, style.json, poster.jpg), README.md (index),
                     ADAPTING.md (what every style keeps for this account), catalog.json (renderer, fit)
-LOG.md              every reel and post made
 .claude/skills/     new-account, reel, social
-engine/             the animation engine: ENGINE.md (pipeline), references/, template/, scripts/
-                    (transcribe.py word timing, mix.py audio mix, contact_sheet.sh), examples/
+engine/             the animation engine: ENGINE.md (pipeline), references/, template/ (with the
+                    StyleCanvas bridge for canvas and three.js styles), scripts/, examples/
 studio/             still-image templates (Remotion): src/brand (mascot, tokens, fonts),
-                    src/templates (reel, carousel, story, highlight, banner), src/pieces (posts)
+                    src/templates (reel, carousel, story, highlight, banner, style picker), src/pieces
 brand/              rendered brand kit: templates/template-sheet.png, assets/ (profile, avatar, banner)
 reels/<slug>/       one Remotion project per reel   (scripts/new-reel.sh <slug>)
 social/<slug>/      rendered posts and story sets
+docs/               images for this README
 ```
+</details>
 
-## Handy commands
+## 🙏 Credits
 
-```bash
-bash studio/render-brand.sh                    # re-render the whole brand kit after editing account.json
-bash studio/render-piece.sh <slug> --guides    # check a post against the safe zones
-bash scripts/new-reel.sh <slug> --style <style> # new reel project in a style (default: account.json)
-bash studio/render-style-picker.sh [style ...]  # poster sheet to choose a look (no names = all 67)
-bash scripts/fetch-style-demo.sh <style>       # a library style's upstream demo code, to read while porting
-node scripts/styles-index.mjs                  # rebuild styles/README.md after editing catalog.json
-cd reels/<slug> && npm run studio              # preview a reel in the browser
-cd reels/<slug> && npm run render              # render out/film.mp4
-```
+Built from the story-animator pipeline. Fonts: Baloo 2 and Patrick Hand (Google Fonts, OFL).
 
-## Credits
-Built from the story-animator pipeline. Fonts: Baloo 2 and
-Patrick Hand (Google Fonts, OFL).
-
-The 66 library styles in `styles/` come from [lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)
-by LemoLab: style guides under MIT (`styles/LICENSE-lemo-opuscar`), poster frames under CC BY 4.0
-© LemoLab (resized). Reels you make with them are yours.
+The 66 library styles come from [lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) by
+**LemoLab**: style guides under MIT ([`styles/LICENSE-lemo-opuscar`](styles/LICENSE-lemo-opuscar)),
+poster frames under CC BY 4.0 © LemoLab (resized, and combined into `docs/hero.jpg` and
+`docs/all-styles.jpg`). Reels you make with them are yours.
