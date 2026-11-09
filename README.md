@@ -8,6 +8,10 @@ A content studio for one Instagram + YouTube Shorts account, in **any niche**, r
   every frame is drawn in code with [Remotion](https://remotion.dev). No presenter, no AI images.
 - **Stills that match the reels:** carousels, single posts, story sets, highlight covers, reel covers,
   profile pictures and a YouTube banner, all from one template library.
+- **67 visual styles to choose from:** the house storybook look plus 66 library styles (watercolour,
+  woodcut, ukiyo-e, pixel RPG, chalkboard, low-poly 3D…) from
+  [lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar). Each account picks a few house styles;
+  every reel and post can use one of them. See [`styles/README.md`](styles/README.md).
 - **Ready-to-paste text:** Instagram captions, Shorts titles and descriptions, plus a `sources.md`
   for every fact.
 
@@ -37,8 +41,8 @@ You also need ElevenLabs for the voice and music. Connect the ElevenLabs connect
 
 | Skill | Say | What happens |
 |---|---|---|
-| `new-account` | "set up a new account for plant care" | Interviews you (niche, audience, handle, voice, mascot, colours, safety rules), fills `account.json` + `BRAND.md`, renders the brand kit, proposes the first 5 reels |
-| `reel` | "make the next reel about X" | **Gate 1:** script, voice preview, storyboard, cover and sources for your OK (no credits spent). **Gate 2:** voice → word timing → animation → mix → render → cover → captions |
+| `new-account` | "set up a new account for plant care" | Interviews you (niche, audience, handle, voice, mascot, colours, house styles, safety rules), fills `account.json` + `BRAND.md`, renders the brand kit, proposes the first 5 reels |
+| `reel` | "make the next reel about X" | **Gate 1:** script, style options (poster sheet), voice preview, storyboard, cover and sources for your OK (no credits spent). **Gate 2:** voice → word timing → animation → mix → render → cover → captions |
 | `social` | "turn that reel into a carousel" / "make a story set" | Outline for your OK, then renders PNGs into `social/<slug>/` with `caption.md` and `sources.md` |
 
 Rules that came from real feedback (no presenter, hook first, designed covers, no sticker
@@ -51,6 +55,8 @@ becomes a rule for every later piece. `LOG.md` keeps the list of what's been mad
 account.json        brand values the code reads (handle, colours, mascot, voice, music, disclaimer)
 BRAND.md            brand guide: voice, 8-beat story formula, specs, captions, safety rules
 LEARNINGS.md        owner feedback rules, newest last
+styles/             67 looks: <style>/STYLE.md (+ DEMO.md, style.json, poster.jpg), README.md (index),
+                    ADAPTING.md (what every style keeps for this account), catalog.json (renderer, fit)
 LOG.md              every reel and post made
 .claude/skills/     new-account, reel, social
 engine/             the animation engine: ENGINE.md (pipeline), references/, template/, scripts/
@@ -68,7 +74,10 @@ examples/finance-unboring/   a fully filled account to learn from
 ```bash
 bash studio/render-brand.sh                    # re-render the whole brand kit after editing account.json
 bash studio/render-piece.sh <slug> --guides    # check a post against the safe zones
-bash scripts/new-reel.sh <slug>                # new reel project
+bash scripts/new-reel.sh <slug> --style <style> # new reel project in a style (default: account.json)
+bash studio/render-style-picker.sh [style ...]  # poster sheet to choose a look (no names = all 67)
+bash scripts/fetch-style-demo.sh <style>       # a library style's upstream demo code, to read while porting
+node scripts/styles-index.mjs                  # rebuild styles/README.md after editing catalog.json
 cd reels/<slug> && npm run studio              # preview a reel in the browser
 cd reels/<slug> && npm run render              # render out/film.mp4
 ```
@@ -76,3 +85,7 @@ cd reels/<slug> && npm run render              # render out/film.mp4
 ## Credits
 Built from the story-animator pipeline and the finance.unboring brand system. Fonts: Baloo 2 and
 Patrick Hand (Google Fonts, OFL).
+
+The 66 library styles in `styles/` come from [lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)
+by LemoLab: style guides under MIT (`styles/LICENSE-lemo-opuscar`), poster frames under CC BY 4.0
+© LemoLab (resized). Reels you make with them are yours.

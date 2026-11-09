@@ -134,6 +134,10 @@ Carousels (1080×1350): every size × 0.85. Headline max 8 words. Body max 25 wo
 - {{niche number formats, units, currency}}
 
 ### 3.5 Characters and scenes
+- **House styles:** `account.json` → `styles` (default first). The library is in `styles/`
+  (index: `styles/README.md`); `styles/ADAPTING.md` says what every style keeps for this account.
+  The lines below describe the default `storybook` look; in another style, keep the mascot's
+  silhouette, colours and face, redrawn in that style's medium.
 - Soft, flat storybook style, drawn in code. No photos, no AI images, no stock art.
 - Round bean bodies, big eyes, pink cheeks. They blink and bob.
 - One warm light source per scene. Gentle camera moves only.

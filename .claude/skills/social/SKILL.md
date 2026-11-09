@@ -14,6 +14,9 @@ relative to the repo root.
    `account.json`. If the niche is still `TBD`, run the `new-account` skill first.
 2. `LEARNINGS.md` (owner feedback rules) and `LOG.md`.
 3. `brand/templates/template-sheet.png` to pick templates. (Missing? `bash studio/render-brand.sh`.)
+4. **The look:** `styles/ADAPTING.md`, then `styles/<style>/STYLE.md`. A recap of a reel uses that
+   reel's style (its `src/story.ts` → `STYLE`); anything else uses `account.json` → `styles.default`
+   unless Checkpoint 1 picks another.
 
 ## What it can make
 
@@ -34,8 +37,15 @@ default). Shared pieces: `studio/src/brand/` (all brand values come from `accoun
   `npx remotion still src/index.ts Film <out>.png --frame=<n> --image-format=png` (frames from its
   `story.ts` SUBS/CUES), save them in `studio/public/pieces/<slug>/`, and use them as the `image` of
   explainer slides. Set `imageY` so the frame's baked-in subtitles (around y 1350–1520) stay out.
-- **New topic:** explainer slides with an accent number, or new art in the same style
-  (`engine/references/visual-style.md`).
+- **New topic:** explainer slides with an accent number, or new art in the chosen style. Draw each
+  picture as a component in `studio/src/pieces/art/<slug>.tsx` (React/SVG for `storybook`;
+  `<StyleCanvas>` from `studio/src/kit/StyleCanvas.tsx` for `canvas`/`three` styles) and register it
+  in `studio/src/pieces/art/index.ts`. Render it to a PNG with
+  `cd studio && npx remotion still src/index.ts art--<name> public/pieces/<slug>/<name>.png`,
+  then use that file as the slide's `image`. The template's text, safe zones and handle stay as
+  they are, so a carousel in any style still reads as this account. For a full-bleed styled slide,
+  make the art the whole 1080×1350 and add the headline and handle in the art component itself,
+  inside the safe zones.
 
 ## Workflow: two checkpoints, nothing rendered before approval
 
@@ -44,6 +54,9 @@ default). Shared pieces: `studio/src/brand/` (all brand values come from `accoun
 2. Send ONE message with:
    - **Slide table:** # / template / headline / body (max 25 words) / accent item / picture / source line.
      One accent item per slide. Headlines max 8 words.
+   - **Style** (new topics only): the default, or up to two others from `styles.allowed` with a
+     one-line reason each, plus their poster sheet
+     (`bash studio/render-style-picker.sh <style> ...`).
    - **Caption** (BRAND.md 6.1) and, for stories, which sticker goes on each and its options.
    - **Sources** with links and dates.
    - A tick-through of the pre-publish checklist (BRAND.md 7.5).
